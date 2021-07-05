@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1ADBEC02693A2620068B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEBF2693A2620068B833 /* AppDelegate.swift */; };
+		A1ADBEC22693A2620068B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC12693A2620068B833 /* SceneDelegate.swift */; };
+		A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC32693A2620068B833 /* ViewController.swift */; };
+		A1ADBEC72693A2620068B833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBEC52693A2620068B833 /* Main.storyboard */; };
+		A1ADBEC92693A2640068B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBEC82693A2640068B833 /* Assets.xcassets */; };
+		A1ADBECC2693A2640068B833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */; };
+		A1ADBED72693A2640068B833 /* TrueCalleriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBED62693A2640068B833 /* TrueCalleriOSTests.swift */; };
+		A1ADBEE22693A2640068B833 /* TrueCalleriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1ADBED32693A2640068B833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1ADBEB42693A2620068B833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1ADBEBB2693A2620068B833;
+			remoteInfo = TrueCalleriOS;
+		};
+		A1ADBEDE2693A2640068B833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1ADBEB42693A2620068B833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1ADBEBB2693A2620068B833;
+			remoteInfo = TrueCalleriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueCalleriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1ADBEBF2693A2620068B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1ADBEC12693A2620068B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1ADBEC32693A2620068B833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1ADBEC62693A2620068B833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1ADBEC82693A2640068B833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1ADBECB2693A2640068B833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1ADBECD2693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueCalleriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1ADBED62693A2640068B833 /* TrueCalleriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueCalleriOSTests.swift; sourceTree = "<group>"; };
+		A1ADBED82693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueCalleriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueCalleriOSUITests.swift; sourceTree = "<group>"; };
+		A1ADBEE32693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1ADBEB92693A2620068B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1ADBECF2693A2640068B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1ADBEDA2693A2640068B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1ADBEB32693A2620068B833 = {
+			isa = PBXGroup;
+			children = (
+				A1ADBEBE2693A2620068B833 /* TrueCalleriOS */,
+				A1ADBED52693A2640068B833 /* TrueCalleriOSTests */,
+				A1ADBEE02693A2640068B833 /* TrueCalleriOSUITests */,
+				A1ADBEBD2693A2620068B833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1ADBEBD2693A2620068B833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */,
+				A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */,
+				A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1ADBEBE2693A2620068B833 /* TrueCalleriOS */ = {
+			isa = PBXGroup;
+			children = (
+				A1ADBEBF2693A2620068B833 /* AppDelegate.swift */,
+				A1ADBEC12693A2620068B833 /* SceneDelegate.swift */,
+				A1ADBEC32693A2620068B833 /* ViewController.swift */,
+				A1ADBEC52693A2620068B833 /* Main.storyboard */,
+				A1ADBEC82693A2640068B833 /* Assets.xcassets */,
+				A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */,
+				A1ADBECD2693A2640068B833 /* Info.plist */,
+			);
+			path = TrueCalleriOS;
+			sourceTree = "<group>";
+		};
+		A1ADBED52693A2640068B833 /* TrueCalleriOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1ADBED62693A2640068B833 /* TrueCalleriOSTests.swift */,
+				A1ADBED82693A2640068B833 /* Info.plist */,
+			);
+			path = TrueCalleriOSTests;
+			sourceTree = "<group>";
+		};
+		A1ADBEE02693A2640068B833 /* TrueCalleriOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */,
+				A1ADBEE32693A2640068B833 /* Info.plist */,
+			);
+			path = TrueCalleriOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1ADBEBB2693A2620068B833 /* TrueCalleriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1ADBEE62693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOS" */;
+			buildPhases = (
+				A1ADBEB82693A2620068B833 /* Sources */,
+				A1ADBEB92693A2620068B833 /* Frameworks */,
+				A1ADBEBA2693A2620068B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueCalleriOS;
+			productName = TrueCalleriOS;
+			productReference = A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1ADBED12693A2640068B833 /* TrueCalleriOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1ADBEE92693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOSTests" */;
+			buildPhases = (
+				A1ADBECE2693A2640068B833 /* Sources */,
+				A1ADBECF2693A2640068B833 /* Frameworks */,
+				A1ADBED02693A2640068B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1ADBED42693A2640068B833 /* PBXTargetDependency */,
+			);
+			name = TrueCalleriOSTests;
+			productName = TrueCalleriOSTests;
+			productReference = A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1ADBEDC2693A2640068B833 /* TrueCalleriOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1ADBEEC2693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOSUITests" */;
+			buildPhases = (
+				A1ADBED92693A2640068B833 /* Sources */,
+				A1ADBEDA2693A2640068B833 /* Frameworks */,
+				A1ADBEDB2693A2640068B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1ADBEDF2693A2640068B833 /* PBXTargetDependency */,
+			);
+			name = TrueCalleriOSUITests;
+			productName = TrueCalleriOSUITests;
+			productReference = A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1ADBEB42693A2620068B833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A1ADBEBB2693A2620068B833 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A1ADBED12693A2640068B833 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A1ADBEBB2693A2620068B833;
+					};
+					A1ADBEDC2693A2640068B833 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A1ADBEBB2693A2620068B833;
+					};
+				};
+			};
+			buildConfigurationList = A1ADBEB72693A2620068B833 /* Build configuration list for PBXProject "TrueCalleriOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1ADBEB32693A2620068B833;
+			productRefGroup = A1ADBEBD2693A2620068B833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1ADBEBB2693A2620068B833 /* TrueCalleriOS */,
+				A1ADBED12693A2640068B833 /* TrueCalleriOSTests */,
+				A1ADBEDC2693A2640068B833 /* TrueCalleriOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1ADBEBA2693A2620068B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ADBECC2693A2640068B833 /* LaunchScreen.storyboard in Resources */,
+				A1ADBEC92693A2640068B833 /* Assets.xcassets in Resources */,
+				A1ADBEC72693A2620068B833 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1ADBED02693A2640068B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1ADBEDB2693A2640068B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1ADBEB82693A2620068B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */,
+				A1ADBEC02693A2620068B833 /* AppDelegate.swift in Sources */,
+				A1ADBEC22693A2620068B833 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1ADBECE2693A2640068B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ADBED72693A2640068B833 /* TrueCalleriOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1ADBED92693A2640068B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ADBEE22693A2640068B833 /* TrueCalleriOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1ADBED42693A2640068B833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1ADBEBB2693A2620068B833 /* TrueCalleriOS */;
+			targetProxy = A1ADBED32693A2640068B833 /* PBXContainerItemProxy */;
+		};
+		A1ADBEDF2693A2640068B833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1ADBEBB2693A2620068B833 /* TrueCalleriOS */;
+			targetProxy = A1ADBEDE2693A2640068B833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1ADBEC52693A2620068B833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1ADBEC62693A2620068B833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1ADBECB2693A2640068B833 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1ADBEE42693A2640068B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1ADBEE52693A2640068B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1ADBEE72693A2640068B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KBG24UAY;
+				INFOPLIST_FILE = TrueCalleriOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1ADBEE82693A2640068B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KBG24UAY;
+				INFOPLIST_FILE = TrueCalleriOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1ADBEEA2693A2640068B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KBG24UAY;
+				INFOPLIST_FILE = TrueCalleriOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueCalleriOS.app/TrueCalleriOS";
+			};
+			name = Debug;
+		};
+		A1ADBEEB2693A2640068B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KBG24UAY;
+				INFOPLIST_FILE = TrueCalleriOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueCalleriOS.app/TrueCalleriOS";
+			};
+			name = Release;
+		};
+		A1ADBEED2693A2640068B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KBG24UAY;
+				INFOPLIST_FILE = TrueCalleriOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrueCalleriOS;
+			};
+			name = Debug;
+		};
+		A1ADBEEE2693A2640068B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7KBG24UAY;
+				INFOPLIST_FILE = TrueCalleriOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrueCalleriOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1ADBEB72693A2620068B833 /* Build configuration list for PBXProject "TrueCalleriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1ADBEE42693A2640068B833 /* Debug */,
+				A1ADBEE52693A2640068B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1ADBEE62693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1ADBEE72693A2640068B833 /* Debug */,
+				A1ADBEE82693A2640068B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1ADBEE92693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1ADBEEA2693A2640068B833 /* Debug */,
+				A1ADBEEB2693A2640068B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1ADBEEC2693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1ADBEED2693A2640068B833 /* Debug */,
+				A1ADBEEE2693A2640068B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1ADBEB42693A2620068B833 /* Project object */;
+}
