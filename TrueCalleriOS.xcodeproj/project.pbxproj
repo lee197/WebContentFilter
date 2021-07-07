@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A159FAD92694BC24007DB98A /* WebContentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FAD82694BC24007DB98A /* WebContentProcessor.swift */; };
 		A159FADB26950C5F007DB98A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FADA26950C5F007DB98A /* ViewModel.swift */; };
+		A159FADD26961D79007DB98A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FADC26961D79007DB98A /* Extensions.swift */; };
 		A1ADBEC02693A2620068B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEBF2693A2620068B833 /* AppDelegate.swift */; };
 		A1ADBEC22693A2620068B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC12693A2620068B833 /* SceneDelegate.swift */; };
 		A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC32693A2620068B833 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		A159FAD82694BC24007DB98A /* WebContentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentProcessor.swift; sourceTree = "<group>"; };
 		A159FADA26950C5F007DB98A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A159FADC26961D79007DB98A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueCalleriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADBEBF2693A2620068B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1ADBEC12693A2620068B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				A1ADBEC82693A2640068B833 /* Assets.xcassets */,
 				A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */,
 				A1ADBECD2693A2640068B833 /* Info.plist */,
+				A159FADC26961D79007DB98A /* Extensions.swift */,
 			);
 			path = TrueCalleriOS;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A159FADB26950C5F007DB98A /* ViewModel.swift in Sources */,
+				A159FADD26961D79007DB98A /* Extensions.swift in Sources */,
 				A159FAD92694BC24007DB98A /* WebContentProcessor.swift in Sources */,
 				A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */,
 				A1ADBEC02693A2620068B833 /* AppDelegate.swift in Sources */,

@@ -53,8 +53,4 @@ class MockHtmlString {
     static func generateShortString() -> String {
         return "too short"
     }
-    
-    static func generateEmptyString() -> String {
-        return ""
-    }
 }
