@@ -9,25 +9,52 @@ import XCTest
 @testable import TrueCalleriOS
 
 class TrueCalleriOSTests: XCTestCase {
+    var wordContentProcessor: WebContentProcessor!
+    var wordContentProcessorShortString: WebContentProcessor!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        wordContentProcessor = WebContentProcessor(htmlString: MockHtmlString.generateSampleData())
+        wordContentProcessorShortString = WebContentProcessor(htmlString: MockHtmlString.generateShortString())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        wordContentProcessor = nil
+        wordContentProcessorShortString = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFindTenthCharacter() throws {
+        let tenthChar = try! wordContentProcessor.findTenthCharacter()
+        XCTAssertEqual(tenthChar, "h")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testFindEveryTenthCharacter() throws {
+        let everyTenthChar = try! wordContentProcessor.findEveryTenthCharacter()
+        XCTAssertEqual(everyTenthChar, "h,r,e")
+    }
+    
+    func testWordCount() throws {
+        let wordCount = wordContentProcessor.wordCount()
+        XCTAssertEqual(wordCount["html"], 2)
+        XCTAssertEqual(wordCount["This"], 1)
+    }
+    
+    func testShortStringInput() throws {
+        XCTAssertThrowsError(try wordContentProcessorShortString.findTenthCharacter()) { error in
+            XCTAssertEqual(error as! WebContentProcessorError, WebContentProcessorError.stringTooShort)
         }
     }
+}
 
+class MockHtmlString {
+    static func generateSampleData() -> String {
+        return "This is the html string for test html"
+    }
+    
+    static func generateShortString() -> String {
+        return "too short"
+    }
+    
+    static func generateEmptyString() -> String {
+        return ""
+    }
 }
