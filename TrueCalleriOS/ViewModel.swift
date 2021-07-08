@@ -29,6 +29,7 @@ class ViewModel {
     
     func startRequests() {
         DispatchQueue.global().async { [weak self] in
+            print(Thread.current)
             guard let self = self else {
                 return
             }
@@ -40,6 +41,7 @@ class ViewModel {
         }
         
         DispatchQueue.global().async { [weak self] in
+            print(Thread.current)
             guard let self = self else {
                 return
             }
@@ -51,6 +53,7 @@ class ViewModel {
         }
         
         DispatchQueue.global().async { [weak self] in
+            print(Thread.current)
             guard let self = self else {
                 return
             }

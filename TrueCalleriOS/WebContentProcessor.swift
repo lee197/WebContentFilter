@@ -21,21 +21,29 @@ struct WebContentProcessor {
         }
         
         var result = [String]()
-        var i = -1
-        while i < self.htmlString.count - 9 {
+        var i = tenthCharacter - 1
+        
+        for (index, char) in htmlString.enumerated() {
+            if index == i {
+                result.append(String(char))
+            } else {
+                continue
+            }
+            
             i += tenthCharacter
-            result.append(self.htmlString[i])
         }
-
+        
         return result.joined(separator: ",")
     }
     
     func findTenthCharacter() throws -> String {
-        if self.htmlString.count < tenthCharacter {
-            throw WebContentProcessorError.stringTooShort
+        for (index, char) in htmlString.enumerated() {
+            if index ==  tenthCharacter - 1 {
+                return String(char)
+            }
         }
         
-        return self.htmlString[tenthCharacter - 1]
+        throw WebContentProcessorError.stringTooShort
     }
     
     func wordCount() -> Dictionary<String, Int> {
