@@ -10,7 +10,7 @@ import Foundation
 class ViewModel {
     var updateHtmlString: (((type: RequestType, result: String)) -> ())?
     var updateError: ((String) -> ())?
-    private var url: String
+    private var webContentFetcher: WebContentServiceProtocol
     
     private var htmlString: (type: RequestType, result: String) = (RequestType.none, "Loading") {
         didSet {
@@ -24,64 +24,47 @@ class ViewModel {
         }
     }
     
-    init(url: String = "https://truecaller.blog/2018/03/15/how-to-become-an-ios-developer/") {
-        self.url = url
+    init(webContentFetcher: WebContentServiceProtocol = WebContentService()) {
+        self.webContentFetcher = webContentFetcher
     }
     
     func startFindTenthRequest() {
-        DispatchQueue.global().async { [weak self] in
-            print(Thread.current)
-            guard let self = self else {
-                return
-            }
-            
-            let tenthChar = self.findtenth()
-            DispatchQueue.main.async { [weak self] in
-                self?.htmlString = (RequestType.tenth, tenthChar)
-            }
-        }
+        self.fetchWebContent(type: .tenth)
     }
     
     func startFindEveryTenthRequest() {
-        DispatchQueue.global().async { [weak self] in
-            print(Thread.current)
-            guard let self = self else {
-                return
-            }
-            
-            let everyTenthChar = self.findEveryTenth()
-            DispatchQueue.main.async { [weak self] in
-                self?.htmlString = (RequestType.everyTenth, everyTenthChar)
-            }
-        }
+        self.fetchWebContent(type: .everyTenth)
     }
     
     func startWordCount() {
-        DispatchQueue.global().async { [weak self] in
-            print(Thread.current)
-            guard let self = self else {
-                return
-            }
-            
-            let wordCount = self.wordCount()
-            DispatchQueue.main.async { [weak self] in
-                self?.htmlString = (RequestType.wordCount, wordCount)
-            }
-        }
+        self.fetchWebContent(type: .wordCount)
     }
     
-    private func fetchHtml() -> String {
-        guard let myURL = URL(string: self.url) else {
-            self.handleErrorOnUIThread(errorString: UserError.badURL.rawValue)
-            return ""
-        }
-        
-        do {
-            let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
-            return myHTMLString
-        } catch {
-            self.handleErrorOnUIThread(errorString: UserError.badEncoding.rawValue)
-            return ""
+    private func fetchWebContent(type: RequestType) {
+        webContentFetcher.getWebContent { result in
+            
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                
+                do {
+                    let htmlString = try result.get()
+                    let webContentProcessor = WebContentProcessor(htmlString: htmlString)
+                    switch type {
+                    case .everyTenth:
+                        self.htmlString = (type, try webContentProcessor.findEveryTenthCharacter())
+                    case .tenth:
+                        self.htmlString = (type, try webContentProcessor.findTenthCharacter())
+                    case .wordCount:
+                        self.htmlString = (type, webContentProcessor.wordCount().description)
+                    case .none:
+                        break
+                    }
+                } catch let error {
+                    self.handleErrorOnUIThread(errorString: self.handleWebContentError(error: error))
+                }
+            }
         }
     }
 }
@@ -102,36 +85,6 @@ extension ViewModel {
         } else {
             return UserError.unknown.rawValue
         }
-    }
-}
-
-extension ViewModel {
-    private func findtenth() -> String {
-        let htmlString = fetchHtml()
-        let webContentProcessor = WebContentProcessor(htmlString: htmlString)
-        do {
-            return try webContentProcessor.findTenthCharacter()
-        } catch let error {
-            self.handleErrorOnUIThread(errorString: self.handleWebContentError(error: error))
-            return ""
-        }
-    }
-    
-    private func findEveryTenth() -> String {
-        let htmlString = fetchHtml()
-        let webContentProcessor = WebContentProcessor(htmlString: htmlString)
-        do {
-            return try webContentProcessor.findEveryTenthCharacter()
-        } catch let error {
-            self.handleErrorOnUIThread(errorString: self.handleWebContentError(error: error))
-            return ""
-        }
-    }
-    
-    private func wordCount() -> String {
-        let htmlString = fetchHtml()
-        let webContentProcessor = WebContentProcessor(htmlString: htmlString)
-        return webContentProcessor.wordCount().description
     }
 }
 

@@ -11,24 +11,19 @@
 		A159FADB26950C5F007DB98A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FADA26950C5F007DB98A /* ViewModel.swift */; };
 		A159FADF26978309007DB98A /* WebContentProcessorUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FADE26978309007DB98A /* WebContentProcessorUnitTest.swift */; };
 		A159FAE12697831A007DB98A /* ViewModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FAE02697831A007DB98A /* ViewModelUnitTest.swift */; };
+		A159FAE9269794CF007DB98A /* WebContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FAE8269794CF007DB98A /* WebContentService.swift */; };
+		A159FAEB26979CFE007DB98A /* MockDataSourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FAEA26979CFE007DB98A /* MockDataSourceService.swift */; };
+		A159FAEC26979FFF007DB98A /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = A159FAE726978C41007DB98A /* sample.txt */; };
 		A1ADBEC02693A2620068B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEBF2693A2620068B833 /* AppDelegate.swift */; };
 		A1ADBEC22693A2620068B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC12693A2620068B833 /* SceneDelegate.swift */; };
 		A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC32693A2620068B833 /* ViewController.swift */; };
 		A1ADBEC72693A2620068B833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBEC52693A2620068B833 /* Main.storyboard */; };
 		A1ADBEC92693A2640068B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBEC82693A2640068B833 /* Assets.xcassets */; };
 		A1ADBECC2693A2640068B833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */; };
-		A1ADBEE22693A2640068B833 /* TrueCalleriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A1ADBED32693A2640068B833 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1ADBEB42693A2620068B833 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1ADBEBB2693A2620068B833;
-			remoteInfo = TrueCalleriOS;
-		};
-		A1ADBEDE2693A2640068B833 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1ADBEB42693A2620068B833 /* Project object */;
 			proxyType = 1;
@@ -42,6 +37,9 @@
 		A159FADA26950C5F007DB98A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A159FADE26978309007DB98A /* WebContentProcessorUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentProcessorUnitTest.swift; sourceTree = "<group>"; };
 		A159FAE02697831A007DB98A /* ViewModelUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelUnitTest.swift; sourceTree = "<group>"; };
+		A159FAE726978C41007DB98A /* sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		A159FAE8269794CF007DB98A /* WebContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentService.swift; sourceTree = "<group>"; };
+		A159FAEA26979CFE007DB98A /* MockDataSourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataSourceService.swift; sourceTree = "<group>"; };
 		A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueCalleriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADBEBF2693A2620068B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1ADBEC12693A2620068B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +50,6 @@
 		A1ADBECD2693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueCalleriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADBED82693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueCalleriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueCalleriOSUITests.swift; sourceTree = "<group>"; };
-		A1ADBEE32693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1ADBEDA2693A2640068B833 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +75,6 @@
 			children = (
 				A1ADBEBE2693A2620068B833 /* TrueCalleriOS */,
 				A1ADBED52693A2640068B833 /* TrueCalleriOSTests */,
-				A1ADBEE02693A2640068B833 /* TrueCalleriOSUITests */,
 				A1ADBEBD2693A2620068B833 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +84,6 @@
 			children = (
 				A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */,
 				A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */,
-				A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +100,7 @@
 				A1ADBEC82693A2640068B833 /* Assets.xcassets */,
 				A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */,
 				A1ADBECD2693A2640068B833 /* Info.plist */,
+				A159FAE8269794CF007DB98A /* WebContentService.swift */,
 			);
 			path = TrueCalleriOS;
 			sourceTree = "<group>";
@@ -121,20 +108,13 @@
 		A1ADBED52693A2640068B833 /* TrueCalleriOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				A159FAE726978C41007DB98A /* sample.txt */,
 				A1ADBED82693A2640068B833 /* Info.plist */,
 				A159FADE26978309007DB98A /* WebContentProcessorUnitTest.swift */,
 				A159FAE02697831A007DB98A /* ViewModelUnitTest.swift */,
+				A159FAEA26979CFE007DB98A /* MockDataSourceService.swift */,
 			);
 			path = TrueCalleriOSTests;
-			sourceTree = "<group>";
-		};
-		A1ADBEE02693A2640068B833 /* TrueCalleriOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */,
-				A1ADBEE32693A2640068B833 /* Info.plist */,
-			);
-			path = TrueCalleriOSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +155,6 @@
 			productReference = A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A1ADBEDC2693A2640068B833 /* TrueCalleriOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1ADBEEC2693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOSUITests" */;
-			buildPhases = (
-				A1ADBED92693A2640068B833 /* Sources */,
-				A1ADBEDA2693A2640068B833 /* Frameworks */,
-				A1ADBEDB2693A2640068B833 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1ADBEDF2693A2640068B833 /* PBXTargetDependency */,
-			);
-			name = TrueCalleriOSUITests;
-			productName = TrueCalleriOSUITests;
-			productReference = A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,10 +168,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					A1ADBED12693A2640068B833 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = A1ADBEBB2693A2620068B833;
-					};
-					A1ADBEDC2693A2640068B833 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = A1ADBEBB2693A2620068B833;
 					};
@@ -230,7 +188,6 @@
 			targets = (
 				A1ADBEBB2693A2620068B833 /* TrueCalleriOS */,
 				A1ADBED12693A2640068B833 /* TrueCalleriOSTests */,
-				A1ADBEDC2693A2640068B833 /* TrueCalleriOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A159FAEC26979FFF007DB98A /* sample.txt in Resources */,
 				A1ADBECC2693A2640068B833 /* LaunchScreen.storyboard in Resources */,
 				A1ADBEC92693A2640068B833 /* Assets.xcassets in Resources */,
 				A1ADBEC72693A2620068B833 /* Main.storyboard in Resources */,
@@ -253,13 +211,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1ADBEDB2693A2640068B833 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A159FAE9269794CF007DB98A /* WebContentService.swift in Sources */,
 				A159FADB26950C5F007DB98A /* ViewModel.swift in Sources */,
 				A159FAD92694BC24007DB98A /* WebContentProcessor.swift in Sources */,
 				A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */,
@@ -279,16 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A159FAEB26979CFE007DB98A /* MockDataSourceService.swift in Sources */,
 				A159FADF26978309007DB98A /* WebContentProcessorUnitTest.swift in Sources */,
 				A159FAE12697831A007DB98A /* ViewModelUnitTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1ADBED92693A2640068B833 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1ADBEE22693A2640068B833 /* TrueCalleriOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,11 +244,6 @@
 			isa = PBXTargetDependency;
 			target = A1ADBEBB2693A2620068B833 /* TrueCalleriOS */;
 			targetProxy = A1ADBED32693A2640068B833 /* PBXContainerItemProxy */;
-		};
-		A1ADBEDF2693A2640068B833 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1ADBEBB2693A2620068B833 /* TrueCalleriOS */;
-			targetProxy = A1ADBEDE2693A2640068B833 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,46 +465,6 @@
 			};
 			name = Release;
 		};
-		A1ADBEED2693A2640068B833 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H7KBG24UAY;
-				INFOPLIST_FILE = TrueCalleriOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TrueCalleriOS;
-			};
-			name = Debug;
-		};
-		A1ADBEEE2693A2640068B833 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H7KBG24UAY;
-				INFOPLIST_FILE = TrueCalleriOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = truecaller.TrueCalleriOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TrueCalleriOS;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -591,15 +491,6 @@
 			buildConfigurations = (
 				A1ADBEEA2693A2640068B833 /* Debug */,
 				A1ADBEEB2693A2640068B833 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1ADBEEC2693A2640068B833 /* Build configuration list for PBXNativeTarget "TrueCalleriOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1ADBEED2693A2640068B833 /* Debug */,
-				A1ADBEEE2693A2640068B833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
