@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		A159FAD92694BC24007DB98A /* WebContentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FAD82694BC24007DB98A /* WebContentProcessor.swift */; };
 		A159FADB26950C5F007DB98A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FADA26950C5F007DB98A /* ViewModel.swift */; };
+		A159FADF26978309007DB98A /* WebContentProcessorUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FADE26978309007DB98A /* WebContentProcessorUnitTest.swift */; };
+		A159FAE12697831A007DB98A /* ViewModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159FAE02697831A007DB98A /* ViewModelUnitTest.swift */; };
 		A1ADBEC02693A2620068B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEBF2693A2620068B833 /* AppDelegate.swift */; };
 		A1ADBEC22693A2620068B833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC12693A2620068B833 /* SceneDelegate.swift */; };
 		A1ADBEC42693A2620068B833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEC32693A2620068B833 /* ViewController.swift */; };
 		A1ADBEC72693A2620068B833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBEC52693A2620068B833 /* Main.storyboard */; };
 		A1ADBEC92693A2640068B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBEC82693A2640068B833 /* Assets.xcassets */; };
 		A1ADBECC2693A2640068B833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADBECA2693A2640068B833 /* LaunchScreen.storyboard */; };
-		A1ADBED72693A2640068B833 /* TrueCalleriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBED62693A2640068B833 /* TrueCalleriOSTests.swift */; };
 		A1ADBEE22693A2640068B833 /* TrueCalleriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		A159FAD82694BC24007DB98A /* WebContentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentProcessor.swift; sourceTree = "<group>"; };
 		A159FADA26950C5F007DB98A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A159FADE26978309007DB98A /* WebContentProcessorUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentProcessorUnitTest.swift; sourceTree = "<group>"; };
+		A159FAE02697831A007DB98A /* ViewModelUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelUnitTest.swift; sourceTree = "<group>"; };
 		A1ADBEBC2693A2620068B833 /* TrueCalleriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueCalleriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADBEBF2693A2620068B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1ADBEC12693A2620068B833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		A1ADBECB2693A2640068B833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1ADBECD2693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1ADBED22693A2640068B833 /* TrueCalleriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueCalleriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1ADBED62693A2640068B833 /* TrueCalleriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueCalleriOSTests.swift; sourceTree = "<group>"; };
 		A1ADBED82693A2640068B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1ADBEDD2693A2640068B833 /* TrueCalleriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueCalleriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADBEE12693A2640068B833 /* TrueCalleriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueCalleriOSUITests.swift; sourceTree = "<group>"; };
@@ -119,8 +121,9 @@
 		A1ADBED52693A2640068B833 /* TrueCalleriOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1ADBED62693A2640068B833 /* TrueCalleriOSTests.swift */,
 				A1ADBED82693A2640068B833 /* Info.plist */,
+				A159FADE26978309007DB98A /* WebContentProcessorUnitTest.swift */,
+				A159FAE02697831A007DB98A /* ViewModelUnitTest.swift */,
 			);
 			path = TrueCalleriOSTests;
 			sourceTree = "<group>";
@@ -276,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1ADBED72693A2640068B833 /* TrueCalleriOSTests.swift in Sources */,
+				A159FADF26978309007DB98A /* WebContentProcessorUnitTest.swift in Sources */,
+				A159FAE12697831A007DB98A /* ViewModelUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

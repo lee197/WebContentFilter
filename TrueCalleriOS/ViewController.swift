@@ -58,8 +58,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startRequestsButtonePressed(_ sender: Any) {
-        viewModel.startRequests()
+        viewModel.startFindTenthRequest()
+        viewModel.startWordCount()
+        viewModel.startFindEveryTenthRequest()
     }
-    
 }
 

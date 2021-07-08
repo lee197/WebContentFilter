@@ -1,14 +1,14 @@
 //
-//  TrueCalleriOSTests.swift
+//  WebContentProcessorUnitTest.swift
 //  TrueCalleriOSTests
 //
-//  Created by Jason Lee on 05/07/2021.
+//  Created by Jason Lee on 08/07/2021.
 //
 
 import XCTest
 @testable import TrueCalleriOS
 
-class TrueCalleriOSTests: XCTestCase {
+class WebContentProcessorUnitTest: XCTestCase {
     var wordContentProcessor: WebContentProcessor!
     var wordContentProcessorShortString: WebContentProcessor!
 

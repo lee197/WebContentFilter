@@ -10,6 +10,7 @@ import Foundation
 class ViewModel {
     var updateHtmlString: (((type: RequestType, result: String)) -> ())?
     var updateError: ((String) -> ())?
+    private var url: String
     
     private var htmlString: (type: RequestType, result: String) = (RequestType.none, "Loading") {
         didSet {
@@ -23,11 +24,11 @@ class ViewModel {
         }
     }
     
-    init() {
-        
+    init(url: String = "https://truecaller.blog/2018/03/15/how-to-become-an-ios-developer/") {
+        self.url = url
     }
     
-    func startRequests() {
+    func startFindTenthRequest() {
         DispatchQueue.global().async { [weak self] in
             print(Thread.current)
             guard let self = self else {
@@ -39,7 +40,9 @@ class ViewModel {
                 self?.htmlString = (RequestType.tenth, tenthChar)
             }
         }
-        
+    }
+    
+    func startFindEveryTenthRequest() {
         DispatchQueue.global().async { [weak self] in
             print(Thread.current)
             guard let self = self else {
@@ -51,7 +54,9 @@ class ViewModel {
                 self?.htmlString = (RequestType.everyTenth, everyTenthChar)
             }
         }
-        
+    }
+    
+    func startWordCount() {
         DispatchQueue.global().async { [weak self] in
             print(Thread.current)
             guard let self = self else {
@@ -66,9 +71,7 @@ class ViewModel {
     }
     
     private func fetchHtml() -> String {
-        let myURLString = "https://truecaller.blog/2018/03/15/how-to-become-an-ios-developer/"
-        
-        guard let myURL = URL(string: myURLString) else {
+        guard let myURL = URL(string: self.url) else {
             self.handleErrorOnUIThread(errorString: UserError.badURL.rawValue)
             return ""
         }
@@ -132,20 +135,16 @@ extension ViewModel {
     }
 }
 
-extension ViewModel {
-    enum UserError : String {
-        case badURL = "The url is not working"
-        case badEncoding = "Can not conver the web content, please check the url"
-        case contentTooShort = "The web content is less than expected"
-        case unknown = "Unknow error, please try again"
-    }
+enum UserError : String {
+    case badURL = "The url is not working"
+    case badEncoding = "Can not conver the web content, please check the url"
+    case contentTooShort = "The web content is less than expected"
+    case unknown = "Unknow error, please try again"
 }
 
-extension ViewModel {
-    enum RequestType {
-        case tenth
-        case everyTenth
-        case wordCount
-        case none
-    }
+enum RequestType {
+    case tenth
+    case everyTenth
+    case wordCount
+    case none
 }
