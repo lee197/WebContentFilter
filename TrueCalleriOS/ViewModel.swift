@@ -8,15 +8,21 @@
 import Foundation
 
 class ViewModel {
+    var updateHtmlString: (((type: RequestType, result: String)) -> ())?
+    var updateError: ((String) -> ())?
     
-    var htmlString: (type: RequestType, result: String) = (RequestType.none, "Loading") {
+    private var htmlString: (type: RequestType, result: String) = (RequestType.none, "Loading") {
         didSet {
             self.updateHtmlString?(htmlString)
         }
     }
     
-    var updateHtmlString: (((type: RequestType, result: String)) -> ())?
-
+    private var userErrorString: String = "" {
+        didSet {
+            self.updateError?(userErrorString)
+        }
+    }
+    
     init() {
         
     }
@@ -56,13 +62,51 @@ class ViewModel {
         }
     }
     
+    private func fetchHtml() -> String {
+        let myURLString = "https://truecaller.blog/2018/03/15/how-to-become-an-ios-developer/"
+        
+        guard let myURL = URL(string: myURLString) else {
+            self.handleErrorOnUIThread(errorString: UserError.badURL.rawValue)
+            return ""
+        }
+        
+        do {
+            let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
+            return myHTMLString
+        } catch {
+            self.handleErrorOnUIThread(errorString: UserError.badEncoding.rawValue)
+            return ""
+        }
+    }
+}
+
+extension ViewModel {
+    private func handleErrorOnUIThread(errorString: String) {
+        DispatchQueue.main.async { [weak self] in
+            self?.userErrorString = errorString
+        }
+    }
+    
+    private func handleWebContentError(error: Error) -> String {
+        if let webProcessingError = error as? WebContentProcessorError {
+            switch webProcessingError {
+            case .stringTooShort:
+                return UserError.contentTooShort.rawValue
+            }
+        } else {
+            return UserError.unknown.rawValue
+        }
+    }
+}
+
+extension ViewModel {
     private func findtenth() -> String {
         let htmlString = fetchHtml()
         let webContentProcessor = WebContentProcessor(htmlString: htmlString)
         do {
             return try webContentProcessor.findTenthCharacter()
         } catch let error {
-            print(error)
+            self.handleErrorOnUIThread(errorString: self.handleWebContentError(error: error))
             return ""
         }
     }
@@ -73,7 +117,7 @@ class ViewModel {
         do {
             return try webContentProcessor.findEveryTenthCharacter()
         } catch let error {
-            print(error)
+            self.handleErrorOnUIThread(errorString: self.handleWebContentError(error: error))
             return ""
         }
     }
@@ -83,29 +127,22 @@ class ViewModel {
         let webContentProcessor = WebContentProcessor(htmlString: htmlString)
         return webContentProcessor.wordCount().description
     }
-    
-    private func fetchHtml() -> String {
-        
-        let myURLString = "https://truecaller.blog/2018/03/15/how-to-become-an-ios-developer/"
+}
 
-        guard let myURL = URL(string: myURLString) else {
-            print("Error: \(myURLString) doesn't seem to be a valid URL")
-            return ""
-        }
-
-        do {
-            let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
-            return myHTMLString
-        } catch let error {
-            print("Error: \(error)")
-            return ""
-        }
+extension ViewModel {
+    enum UserError : String {
+        case badURL = "The url is not working"
+        case badEncoding = "Can not conver the web content, please check the url"
+        case contentTooShort = "The web content is less than expected"
+        case unknown = "Unknow error, please try again"
     }
 }
 
-enum RequestType {
-    case tenth
-    case everyTenth
-    case wordCount
-    case none
+extension ViewModel {
+    enum RequestType {
+        case tenth
+        case everyTenth
+        case wordCount
+        case none
+    }
 }
