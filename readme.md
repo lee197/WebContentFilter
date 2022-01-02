@@ -1,5 +1,6 @@
 
-# TrueCalleriOS
+# WebContentFilter
+
 An app to fetch web content, process the content  and display the result.
 
 ## Branches:
