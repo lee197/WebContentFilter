@@ -23,7 +23,6 @@ class MockDataSourceService {
 }
 
 extension MockDataSourceService: WebContentServiceProtocol {
-    
     func getWebContent(complete completionHandler: @escaping (Result<String, WebContentFetchError>) -> ()) {
         isFetchDataCalled = true
         completeClosure = completionHandler
